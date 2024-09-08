@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store Data Analytics</title>
-    <link rel="stylesheet" href="style.css"> <!-- Optional: Link to a CSS file -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Data Analytics</title>
+    <style>
+        :root {
+            --primary-color: #1c0d3f;
+            --secondary-color: #ed26b7;
+            --background-color: #f5f5f5;
+            --text-color: #333333;
+        }
+
+        body {
+            background-color: var(--background-color);
+            font-family: 'Arial', sans-serif;
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 40px;
+        }
+
+        iframe {
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-<iframe src="https://spotted-quail.trial.cloud.gooddata.com/dashboards/embedded/#/workspace/9ffc8c879f0d449b808e2e950c4e6830/dashboard/1e466a77-6b72-49c1-a596-c1821f0fc152?showNavigation=false&setHeight=700" 
-  height="700px" 
-  width="100%" 
-  frameborder="0"></iframe>
+    <h1>Store Data Analytics</h1>
+    <p>Welcome to the Store Data Analytics dashboard. Here, you can explore various metrics and insights related to product sales, customer behaviour, and sales performance.</p>
+    <iframe src="https://spotted-quail.trial.cloud.gooddata.com/dashboards/embedded/#/workspace/9ffc8c879f0d449b808e2e950c4e6830/dashboard/1e466a77-6b72-49c1-a596-c1821f0fc152?showNavigation=false&setHeight=700" 
+    height="700px" 
+    width="100%" 
+    frameborder="0"></iframe>
 </body>
 </html>
