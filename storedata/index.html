@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store Data Analytics</title>
-    <link rel="stylesheet" href="style.css"> <!-- Optional: Link to a CSS file -->
-</head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store Data Analytics Dashboard</title>
+  <link rel="stylesheet" href="style.css"> </head>
 <body>
-    <h1>Store Data Analytics Dashboard</h1>
-    
-    <!-- Container to hold the GoodData dashboard -->
-    <div id="gooddata-dashboard-container">
-        <iframe src="https://secure.gooddata.com/dashboards/#/projects/{your_project_id}/dashboards/{your_dashboard_id}" 
-                width="100%" 
-                height="600" 
-                frameborder="0">
-        </iframe>
-    </div>
-    
-    <script src="script.js"></script> <!-- Optional: Link to a JS file -->
-</body>
+  <h1>Store Data Analytics Dashboard</h1>
+
+  <div id="gooddata-dashboard-container">
+
+    <script type="module" src="https://spotted-quail.trial.cloud.gooddata.com/components/9ffc8c879f0d449b808e2e950c4e6830.js"></script>
+
+    <gd-dashboard 
+      dashboard="1e466a77-6b72-49c1-a596-c1821f0fc152"
+      style="height: 700px"
+    ></gd-dashboard>
+
+  </div>
+
+  <script src="script.js"></script> </body>
 </html>
