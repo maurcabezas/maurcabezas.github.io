@@ -54,19 +54,23 @@
             font-size: 24px;
         }
 
-        .file-links {
-            margin-top: 20px;
-        }
+    .file-links ul {
+      list-style: none;
+      padding: 0;
+    }
 
-        .file-links a {
-            color: var(--secondary-color);
-            text-decoration: none;
-            margin: 0 10px;
-        }
+    .file-links li {
+      margin: 10px 0;
+    }
 
-        .file-links a:hover {
-            text-decoration: underline;
-        }
+    .file-links a {
+      color: var(--secondary-color);
+      text-decoration: none;
+    }
+
+    .file-links a:hover {
+      text-decoration: underline;
+    }
     </style>
 </head>
 <body>
@@ -74,16 +78,16 @@
    <h1>Select Your Dashboard</h1>
    <a href="./tournament/index.html" class="button">Tournament</a>
    <a href="./store/index.html" class="button">Store</a>
-<div class="file-links">
-  <h2>Files used in this task:</h2>
-  <ul>
-      <a href="./files/generatedata.py">Python Script for generating random data</a>
-      The following files were generated, uploaded to BigQuery, and used in the 'store' section.
-      <a href="./files/SalesData.csv">SalesData.csv</a> (view in browser)
-      <a href="./files/ProductData.csv">ProductData.csv</a> (view in browser)
-      <a href="./files/CustomerData.csv">CustomerData.csv</a> (view in browser)
-  </ul>
-</div>
+  <div class="file-links">
+    <h2>Files used in this task:</h2>
+    <ul>
+      <li><a href="./files/generatedata.py">Python Script for generating random data</a></li>
+      <li>The following files were generated, uploaded to BigQuery, and used in the 'store' section.</li>
+      <li><a href="./files/SalesData.csv">SalesData.csv</a> (view in browser)</li>
+      <li><a href="./files/ProductData.csv">ProductData.csv</a> (view in browser)</li>
+      <li><a href="./files/CustomerData.csv">CustomerData.csv</a> (view in browser)</li>
+    </ul>
+  </div>
     </div>
 </body>
 </html>
