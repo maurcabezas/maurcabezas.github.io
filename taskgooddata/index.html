@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Options</title>
+    <style>
+        /* GoodData Colour Palette */
+        :root {
+            --primary-color: #004b8d; /* Navy blue */
+            --secondary-color: #00aaff; /* Light blue */
+            --button-hover-color: #0066cc; /* Hover blue */
+            --background-color: #f5f5f5; /* Light grey background */
+            --text-color: #333333; /* Dark grey text */
+        }
+
+        body {
+            background-color: var(--background-color);
+            font-family: 'Arial', sans-serif;
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .button {
+            background-color: var(--primary-color);
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: var(--button-hover-color);
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Select Your Dashboard</h1>
+        <a href="../tournament/index.html" class="button">Tournament</a>
+        <a href="../store/index.html" class="button">Store</a>
+    </div>
+</body>
+</html>
